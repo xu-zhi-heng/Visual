@@ -1,0 +1,279 @@
+/*滚动条*/
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+::-webkit-scrollbar-thumb {
+    background: #666;
+    border-radius: 5px;
+}
+::-webkit-scrollbar-track {
+    background: none;
+    border-radius: 5px;
+}
+
+#root {
+    height: 100%;
+    width: 100%;
+    background: #040609;
+    clear: both;
+    font-family: "Microsoft Yahei",serif;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+.layout_layout__3Opi1 {
+    height: 100%;
+    color: #e3e6ff;
+}
+.ContentLayout_root__2XtMx {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.ContentLayout_content__1GR6P {
+    flex-grow: 1;
+    height: 100%;
+    display: flex;
+    overflow: hidden;
+}
+.ComponentSide_bar__3EiAU {
+    display: flex;
+    height: 100%;
+}
+.ComponentSide_category__1sNY8 {
+    height: 100%;
+    background: #212c3d;
+    overflow: hidden;
+    position: relative;
+    width: 40px;
+}
+.ComponentSide_icon__1vrU7 {
+    font-size: 16px;
+    padding: 5px 0;
+    margin: 10px 5px;
+    text-align: center;
+    height: 30px;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #92abcf;
+    cursor: pointer;
+}
+.anticon {
+    display: inline-block;
+    color: inherit;
+    font-style: normal;
+    line-height: 0;
+    text-align: center;
+    text-transform: none;
+    vertical-align: -.125em;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+.anticon i {
+    display: inline-block;
+}
+/*点上哪个图标，哪个图标就变亮*/
+.ComponentSide_iconSelected__3UNGU {
+    color: #1d2636;
+    background-color: #11ece5;
+    border-radius: 4px;
+}
+
+.ComponentSide_components__2Wcic {
+    height: 100%;
+    width: 240px;
+    background: #1d2636;
+    border-left: 1px solid #303247;
+    overflow: hidden;
+    display: none;
+    flex-direction: column;
+}
+.ComponentSide_cateTitle__2dqZl {
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    position: relative;
+    border-bottom: 1px solid #303247;
+}
+.ComponentSide_close__b-tZ0 {
+    position: absolute;
+    right: 12px;
+    cursor: pointer;
+}
+.ComponentSide_componentBox__3hozc {
+    flex-grow: 1;
+    flex-basis: 0;
+    overflow: auto;
+    align-content: flex-start;
+}
+
+.mojito-row {
+    display: flex;
+    flex-flow: row wrap;
+}
+.mojito-col {
+    position: relative;
+    min-height: 1px;
+}
+.mojito-col-24 {
+    display: block;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.ComponentSide_componentView__3zsgD {
+    width: 100%;
+    height: 102px;
+    background: #191b23;
+    display: inline-block;
+    position: relative;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.ComponentSide_componentView__3zsgD:hover {
+    border: 1px solid #03a9f4;
+}
+.ComponentSide_componentImg__2GroC {
+    text-align: center;
+    pointer-events: none;
+    margin-top: 12px;
+}
+.ComponentSide_componentTitle__3TWSi {
+    text-align: center;
+    position: absolute;
+    top: 68px;
+    width: 100%;
+}
+
+/*头部操作栏*/
+.Playground_actionBar__1-h20 {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 55%;
+    height: 40px;
+    justify-content: space-between;
+}
+.Playground_zoomBox__z21We {
+    display: flex;
+    align-items: center;
+}
+.Playground_zoomBtn__2YF2V {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+}
+.Playground_zoomBtn__2YF2V:hover {
+    background-color: #a5a5a5;
+    border-radius: 7px;
+}
+.Playground_toolbar__2AZ8M {
+    font-size: 16px;
+    height: 45px;
+    position: absolute;
+    right: 12px;
+    cursor: pointer;
+    line-height: 45px;
+}
+.IconFont_iconLink__V-Gb1 > i:hover {
+    color: #00f2f1;
+}
+.IconFont_iconLink__V-Gb1 {
+    color: #92abcf!important;
+}
+
+
+
+/*大屏部分*/
+.Playground_root__3qvBq {
+    width: 100%;
+    flex-grow: 1;
+    flex-basis: 0;
+    overflow: auto;
+    height: 100%;
+    display: flex;
+
+    padding: 0 2px 2px;
+    flex-direction: column;
+    position: relative;
+    background: linear-gradient(
+            -90deg
+            ,rgba(0,0,0,.02) 1px,transparent 0),linear-gradient(rgba(0,0,0,.02) 1px,transparent 0),linear-gradient(
+            -90deg
+            ,rgba(0,0,0,.03) 1px,transparent 0),linear-gradient(rgba(0,0,0,.03) 1px,transparent 0),linear-gradient(transparent 4px,#f5f5f5 0,#f5f5f5 97px,transparent 0),linear-gradient(
+            -90deg
+            ,#e5e5e5 1px,transparent 0),linear-gradient(
+            -90deg
+            ,transparent 4px,#f5f5f5 0,#f5f5f5 97px,transparent 0),linear-gradient(#e5e5e5 1px,transparent 0),#f5f5f5;
+    background-size: 10px 10px,10px 10px,100px 100px,100px 100px,100px 100px,100px 100px,100px 100px,100px 100px;
+}
+.Playground_area__Fv-_L {
+    width: 100%;
+    flex-grow: 1;
+    flex-basis: 0;
+    overflow: auto;
+    height: 100%;
+    display: flex;
+}
+.screenContainer {
+    width: 1920px;
+    height: 1080px;
+    background-color: white;
+    background-repeat: repeat;
+    color: rgb(0, 0, 0);
+    position: relative;
+    box-shadow: rgba(0,0,0,0.15) 3px 3px 15px;
+    z-index: 1;
+    transform: scale(0.4);
+    transform-origin: 0px 0px 0px;
+}
+
+/*属性操作栏*/
+.AttributeSide_attrRoot__51-Eo {
+    height: 100%;
+    background: #212c3d;
+    display: flex;
+}
+.AttributeSide_content__3rm2n {
+    width: 100%;
+    height: 100%;
+    background: #1d2636;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+
+/*操作选择图标栏*/
+.AttributeSide_tabBox__1hkCR {
+    width: 40px;
+    flex-shrink: 0;
+    border-left: 1px solid #303247;
+}
+.AttributeSide_tab__20pFP {
+    height: 30px;
+    font-size: 18px;
+    text-align: center;
+    color: #92abcf;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 0;
+    margin: 10px 5px;
+    cursor: pointer;
+}
+.AttributeSide_tabSelected__2qyTI {
+    color: #1d2636;
+    background-color: #11ece5;
+    border-radius: 4px;
+}

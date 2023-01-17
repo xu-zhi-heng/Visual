@@ -6,6 +6,20 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
     <title><%= htmlWebpackPlugin.options.title %></title>
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_2476089_vkad3nxb0fi.css">
+    <script src="https://cdn.bootcdn.net/ajax/libs/echarts/5.1.1/echarts.min.js"></script>
+    <script src="static/theme/chalk.js"></script>
+    <script src="static/theme/dark.js"></script>
+    <script src="static/theme/vintage.js"></script>
+    <script src="empile.js"></script>
+    <style>
+      .el-select-dropdown {
+        z-index: 10000 !important;
+      }
+      .el-popper[x-placement^=bottom] {
+        z-index: 10001 !important;
+      }
+    </style>
   </head>
   <body>
     <noscript>
